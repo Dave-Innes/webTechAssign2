@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles/style2.css">
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet"> 
+        <title>Theatre Tickets</title>
+    </head>
+    <body>
+      <div class="title">
+        <img src="images2/innesClanCrest.webp" alt="The Innes family crest" id="crest">  
+        <h1>Theatre Tickets</h1>
+        </div>
+        <nav id="mainNav" class="mainNav" >
+          <a href="Home.html">Home</a>
+          <a href="CSSSkills.html">CSS Skills</a>
+          <a href= "Qualifications.html">Qualifications</a>
+          <a href="ProgrammingSkills.html">Programming Skills</a>
+    
+        </nav>
+
+        <!-- TO DO
+        BG img for the current shows board.
+        select show.
+        select date.
+        number of tickets.
+        delivery.
+        Name/address.
+        apply discount if needed.
+        output box this summary of above.
+       -->
+<body>
+  <div>
+    <h1>The Old BallRoom Theatre</h1>
+    <h2>Current Shows</h2>
+    <section id="shows">
+      <img src="ticketimages/phantom1.png"id="poto" >
+      <img src="ticketimages/hamilton.png"id="ham">
+      <img src="ticketimages/lionKinn2.png"id="lion">
+      <img src="ticketimages/missSaigon2.jpg"id="miss">
+    </section>
+  </div>
+  <section id="bookingInfo">
+<section id="Booking">
+  <h2>Ticket Booking</h2>
+  <form>
+  <div>
+    <select id="tickets">
+    <option value="none" selected>(None)</option>
+    <option value="phantomOfTheOpera" id="phantomOfTheOpera">Phantom Of The Opera</option>
+    <option value="hamilton"id="hamilton">Hamilton</option>
+    <option value="theLionKing"id="theLionKing">The Lion King</option>
+    <option value="missSaigon" id="missSaigon">Miss Saigon</option>
+  </select>
+</div> 
+  <div>
+    <p id= "qty">QTY:</p> <input id ="qtyInput" type="number" min= "0" required value="0" >
+</div> 
+<div>
+  <p id="delmeth">Delivery Method:</p>
+  <input type="radio" id="e-ticket" name="tickets"value ="eticket" checked><label for="e-ticket"> E-ticket(Free)</label>
+  <input type="radio" id="post"name ="tickets"value ="post"><label for="post"> Post(£3.99) </label>
+  <input type="radio" id="boxOffice" name="tickets"value ="boxoffice"><label for="boxOffice">Box office collection(£1.50)</label></div>
+  <div id="btn"><button type="button" id="bookBtn">Book Tickets</button></div>
+</form>
+</section>
+<section id=details>
+  <h2>Customer Details</h2>
+  <form id="detailsForm">
+    <label for="name">Name</label>
+    <input type="text"id="name" placeholder="Frank Grimes" required>
+    <label for="Address" >Address</label>
+    <textarea id="Address" placeholder="123 Fake Street.
+Springfield
+USA"required></textarea>
+    <label for="email" >Email</label>
+    <input type="email"id="email"placeholder="Grimey@gmail.com" required>
+  </form>
+</section>
+</section>
+<section id=ticketsum>
+  <label>Summary</label>
+  <p id=ticketOutput></p>
+
+  
+</section>
+    <script src="scripts/tickets.js"></script>
+</body>
+</html>

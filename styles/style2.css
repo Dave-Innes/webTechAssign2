@@ -1,0 +1,370 @@
+*{
+    color: white;
+    background-color:#050505;
+    font-family: sans-serif, serif, Arial, Helvetica;
+}
+.title{
+    display: flex;
+    flex-direction:row;
+    margin-left:0.6em;
+}
+h1{
+    color: white;
+}
+#crest{
+    width: 5em;
+    height: 5em;
+}
+@media only screen and (max-width:1200px){
+
+    .mainnav{
+        display:flex;
+        flex-direction:row;
+    }
+    .mainNav a{
+        background-color:#030303;
+        font-size:2em;
+        /* padding-right: 20px; */
+        color:whitesmoke;
+        text-decoration: none;
+        width:auto;
+        margin-left:0.6em;
+        display: flex;
+    }
+   /*-------------- This next code is for the homepage only ----------------------------------*/
+
+   #bio{
+       display: flex;
+   }
+    .AboutMe{
+        display: flex;
+        width: auto;
+        margin: auto;
+        flex-flow: row wrap;
+        /* justify-content: space-evenly; */
+
+    }
+    .intro{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .interests{
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+    .images{
+        max-width:100%;
+        height: auto;
+
+    }
+    .dog{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    /*-------------- This next code is for the CSS Skills  page only -------------------- -----*/
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    /*-------------- This next code is for the Qualifications page only -----------------------*/
+
+    td{
+        padding:1.0em;
+    }
+    tr{
+        max-width:100%;
+        font-size: 0.7em;
+    }
+
+    /*-------------- This next code is for the programming page only --------------------------*/
+    .program{
+        display: flex;
+        flex-direction: column;
+    }
+    .underConstruction{
+        max-width:100%;
+    }
+     /*-------------- This next code is for the slot machine page only --------------------------*/
+}
+
+    /*-----------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width:1201px) and (max-width:1920px){
+    .mainnav{
+        display:flex;
+        /* flex-flow:row wrap;  */
+    }
+    .mainNav a{
+        background-color:#030303;
+        font-size:2em;
+        padding-right: 20px;
+        color:#f5f5f5;
+        text-decoration: none;
+        width:auto;
+        margin-left:0.6em;
+        justify-content: space-evenly;
+
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /*-------------- This next code is for the homepage only ----------------------------------*/
+    strong{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+    .AboutMe{
+        display: flex;
+
+    }
+    .images{
+    align-items: flex-end;
+    }
+
+ /*-------------- This next code is for the CSS Skills  page only -------------------- -----*/
+ .csspage{
+     display:flex;
+    /* flex-direction: column; */
+
+ }
+ #css{
+     display: flex;
+ }
+#cssSections{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33% ;
+}
+
+ section{
+     display:flex;
+ }
+ /*-------------- This next code is for the Qualifications page only -----------------------*/
+ td{
+    padding:1.5em;
+}
+tr{
+     font-size: 1em;
+     padding:10em;
+    width:100%;
+}
+ /*-----------------------------------------------------------------------------------------*/
+
+/*-------------- This next code is for the programming page only --------------------------*/
+.program{
+    display:flex;
+}
+.underConstruction{
+    width:100%;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*--------------- This code is for the slot machine  -------------------------------*/
+#amounts{
+    flex-flow:row wrap;
+    justify-content:space-evenly; 
+}
+#buttons{
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+}
+#reels{
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+
+}
+#reel1{
+    width:25%;
+    height: 15em;
+    border: red 2em solid;
+}
+#reel2{
+    width:25%;
+    height: 15em;
+    border:red 2em solid;
+}
+#reel3{
+    width:25%;
+    height: 15em;
+    border:red 2em solid;
+}
+.slotButtons{
+     font-size: 5em;
+     font-family: 'Sancreek', cursive;
+}
+#spin{
+    font-size: 7em;
+    background-color:blue;
+    font-family: 'Sancreek', cursive;
+ 
+}
+#credits{
+    font-size: 2em;
+    padding-left: 0.5em;
+    border: white 5px solid;
+    width:25%;
+    height: 5em;
+}
+#credit{
+    font-family: 'Sancreek', cursive;
+}
+#creditAmount{
+    font-family: 'Sancreek', cursive;
+}
+#win{
+    font-family: 'Sancreek', cursive;
+}
+#winAmount{
+    font-family: 'Sancreek', cursive;
+}
+#header{
+    font-size:4em;
+    font-family: 'Sancreek', cursive;
+}
+#winnings{
+    font-size: 2em;
+    padding-left: 0.5em;
+    border :white 5px solid;
+    width:25%;
+    height: 5em;
+}
+#creditBtn{
+    background-color:green;
+    
+}
+#winningsBtn{
+    background-color: purple;
+}
+/* #transfer{
+    background-color:rgba(255, 94, 0, 0.911);
+} */
+#outputSect{
+    display:flex;
+    padding:0em;
+}
+#output{
+    display: flex;
+    font-size:2.5em;
+    font-family: 'Sancreek', cursive;
+    justify-content: center;
+    min-height: 55px;
+}
+/*-----------------------------------------------------------------------------------------*/
+/*----------------------------Theatre Ticket site------------------------------------------*/
+#bookingInfo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+}
+#shows{
+    display: flex;
+    flex-flow: row wrap;
+}
+#poto{
+    width:25%;
+    height:auto;
+    margin:0;
+    padding: 0;
+}
+#ham{
+    width:25%;
+    height:auto;
+    margin:0;
+    padding: 0;
+}
+#lion{
+    width:25%;
+    height:auto;
+    margin:0;
+     padding: 0;
+}
+#miss{
+    width:25%;
+    height:auto;
+    margin:0;
+    padding: 0;
+}
+select{
+    font-size :1.2em;
+}
+#qty{
+    font-size:1.2em;
+}
+label{
+    font-size:1.2em;
+}
+#Booking{
+    width:45%;
+}
+#details{
+    width: 45%;
+}
+#detailsForm{
+    display: flex;
+    flex-flow: column wrap;
+}
+#Address{
+    min-height: 10em;;
+}
+#delmeth{
+    font-size:1.2em;
+}
+#ticketOutput{
+    min-height: 10em;
+    border: white dashed 1px;
+    font-size:1.2em
+}
+#bookBtn{
+    min-height:2em;
+    min-width: 2em;
+    max-width: 10em;
+    font-size: 1.5em;
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+#name{
+    font-size: 1.2em;
+}
+#Address{
+    font-size: 1.2em;
+}
+#email{
+    font-size: 1.2em;
+}
+#qtyInput{
+    font-size: 1.2em;
+}
+/*-----------------------------------------------------------------------------------------*/
+section {
+        background:#050505;
+       color:rgb(14,13,13);
+       border: 1px white dashed;
+       flex-flow: column wrap;
+       padding: 1em;
+}
+table{
+    display:flex;
+    flex-direction: column;
+    border: 1px white dashed;
+}
+#mainNav strong:hover{
+    color:#050505;
+    background-color:whitesmoke;
+}
+h2{
+    padding-right: 0.5em;
+}
+}
